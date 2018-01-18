@@ -250,7 +250,7 @@ err1:
 /*test for private key encrypt then use public key decrypt*/
 void test_prienc_pubdec()
 {
-	uchar *text = "Be yoursely by Sky";
+	uchar *text = "Be yourself by Sky";
 	fprintf(stdout, "will encrypt plaintxt: %s\n", text);
 	int padding = RSA_PKCS1_PADDING;
 	uchar *enc_pri = rsa_pri_encrypt(prikey, text, padding);
